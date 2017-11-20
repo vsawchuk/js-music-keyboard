@@ -1,6 +1,7 @@
 $(document).ready(() => {
-  let [cPlay, dPlay, ePlay, fPlay, gPlay, aPlay, bPlay] = [true, true, true, true, true, true, true];
-  const notes = 'abcdefg';
+  const allTrue = [true, true, true, true, true, true, true];
+  let [cPlay, dPlay, ePlay, fPlay, gPlay, aPlay, bPlay] = allTrue;
+  const notes = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 
   const play = function play(note) {
     $(`#${note}Audio`).trigger('load');
