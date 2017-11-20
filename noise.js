@@ -9,7 +9,6 @@ $(document).ready(() => {
 
   $('.instrument').on('click', 'button', function () {
     const note = $(this)[0].innerHTML;
-    console.log(note);
     play(note);
   });
 
