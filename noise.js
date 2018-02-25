@@ -24,8 +24,8 @@ $(document).ready(() => {
 
   $('body').on('keyup', (event) => {
     const note = event.key;
-    $(`.${note}`).removeClass('active');
     if (notes.includes(note)) {
+      $(`.${note}`).removeClass('active');
       eval(`${note}Play = true`);
     }
   });
